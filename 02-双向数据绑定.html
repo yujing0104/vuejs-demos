@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="app">
+		<h1>{{ message }}</h1>
+		<h1>{{ message }}</h1>
+		<h1>{{ message }}</h1>
+		<h1>{{ message }}</h1>
+		<p>{{ message }}</p>
+		<div>
+			<span>{{ message }}</span>
+		</div>
+<!-- 	</div>
+	<div id="app">
+		<h1>Hello Vue.js</h1> -->
+		<input type="text" v-model="message">
+	</div>
+
+	<script src="node_modules/vue/dist/vue.js"></script>
+	<script>
+		const app = new Vue({
+			el: '#app',
+			data:{
+				message:'Hello World!'
+			}
+		})
+	</script>
+</body>
+</html>
